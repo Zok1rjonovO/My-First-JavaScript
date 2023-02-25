@@ -18,7 +18,7 @@
         var name = prompt ("what is your name");
         var lastname = prompt ("what is your lastname");
         var age = prompt ("how old are you");
-        var Location = prompt ("where are you live");
+        var Location = prompt ("where are you from");
         var autobiography = prompt ("Let's tell about yourself you can write here");
         
         console.log("name:" + name);
@@ -26,7 +26,12 @@
         console.log("age:" + age);
         console.log("Location:" + Location);
         console.log("autobiography:" + autobiography);
-
+        
+        
+        
+        if (new Date().getHours() < 18) {
+            document.getElementById("demo").innerHTML = "Good day!";
+        }
     </script>
 </body>
 </html>
